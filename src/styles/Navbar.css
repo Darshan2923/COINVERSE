@@ -5,6 +5,7 @@
     max-width: 50%;
     height: auto;
     margin-left: 25%;
+    z-index: 200;
 }
 
 .header {
@@ -29,6 +30,7 @@ li a {
     font-weight: 1000;
     letter-spacing: 0.7px;
 }
+
 
 body {
     background-image: linear-gradient(0deg, #0f051d 20%, #130749);
