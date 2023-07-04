@@ -6,7 +6,7 @@ function ChooseBox(props) {
         <div className='box-1-container'>
             <div className="card-content">
                 <div className="image-content">
-                    <img src={props.img} alt="" />
+                    <i className={props.img}></i>
                 </div>
                 <div className="text-content">
                     <div className="title">{props.title}</div>

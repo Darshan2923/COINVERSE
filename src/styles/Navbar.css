@@ -56,7 +56,11 @@ body {
 }
 
 a:hover {
-    color: purple;
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    /* colorful look dene ke liye of the text in span */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     transition: all 0.3s;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Why.css'
 import ChooseBox from './ChooseBox'
-import bitimg from '../styles/bitcoin-hand.jpg'
+import bitimg from '../styles/choose-main.png'
 
 
 function Choose() {
@@ -26,23 +26,27 @@ function Choose() {
                         title="SELECT YOUR QUANTITY"
                         text="Upload your crypto and set a title, description and price." />
                     <ChooseBox
+                        img="fa-solid fa-bolt"
                         title="CONFIRM TRANSACTION"
                         text="Earn by selling your crypto on our marketplace." />
-                    <div className="image-in-between">
-                        <img className='logo1' src={bitimg} alt="" />
-                    </div>
-                    <div className="container-content_2">
-                        <ChooseBox
-                            title="RECEIVE YOUR OWN NFTS"
-                            text="Invest all your crypto at one place on one platform" />
-                        <ChooseBox
-                            title="TAKE A MARKET TO SELL"
-                            text="Discover, collect the right crypto collections to buy or sell." />
-                        <ChooseBox
-                            title="DRIVE YOUR COLLECTION"
-                            text="We make it easy to Discover, Invest and manage." />
+                </div>
+                <div className="image-in-between">
+                    <img className='logo1' src={bitimg} alt="bitcoin-img" />
+                </div>
+                <div className="container-content_2">
+                    <ChooseBox
+                        img="fa-solid fa-satellite-dish"
+                        title="RECEIVE YOUR OWN NFTS"
+                        text="Invest all your crypto at one place on one platform" />
+                    <ChooseBox
+                        img="fa-solid fa-chess-knight"
+                        title="TAKE A MARKET TO SELL"
+                        text="Discover, collect the right crypto collections to buy or sell." />
+                    <ChooseBox
+                        img="fa-solid fa-boxes-stacked"
+                        title="DRIVE YOUR COLLECTION"
+                        text="We make it easy to Discover, Invest and manage." />
 
-                    </div>
                 </div>
             </div>
         </section>

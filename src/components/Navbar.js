@@ -12,7 +12,7 @@ function Navbar() {
                     <li><a href="#home">Home</a></li>
                     <li><a href="#market">Market</a></li>
                     <li><a href="#choose">Choose Us</a></li>
-                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#join">Join Us</a></li>
                 </ul>
             </div>
         </div>

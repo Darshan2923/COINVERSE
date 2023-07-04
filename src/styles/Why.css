@@ -1,10 +1,17 @@
+/* First section of mine to be responsive */
 .choose_container h2 span {
     background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    /* colorful look dene ke liye of the text in span */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    /* webkit is how the code will look in your browser
+    text-fill-color-text ka color
+    background-clip:text (if you want to color the text, isko aisa likho and make fill-color:transparent
+    */
 }
 
+/* Why choose us ka container hai */
 .choose_container h2 {
     color: white;
     text-transform: uppercase;
@@ -12,13 +19,21 @@
     font-family: Oswald;
 }
 
+/* Why us ke niche margin diya hai */
+.choose_container {
+    margin-bottom: 70px;
+}
+
 /*for cards under choose us*/
 .card-content {
     display: flex;
-    justify-content: center;
+    align-items: start;
     padding: 20px 40px;
-    margin: 20px 150px;
-    background-color: rgb(40, 38, 38);
+    margin: 20px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    background-color: rgb(36, 28, 36);
+    /* border-box matlab width air height ko count kar lena */
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid gray;
@@ -38,3 +53,99 @@
     font-size: 20px;
     line-height: 1.1;
 }
+
+.container-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap for responsiveness */
+}
+
+
+
+.logo1 {
+    margin-top: 40px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 500px;
+    box-sizing: border-box;
+    display: inline;
+}
+
+.container-content_1 {
+    margin-left: 125px;
+    /* Andar ke text ko left align kiya
+    jo app ke dvara directly hi right align ho raha tha
+     */
+    text-align: start;
+    /* left se margin diya isliye flex kiya toh sab ka left margin aa gaya */
+    /* I still don't know to make size of image equal to container ka size
+    object fill use kiya but usless hai */
+}
+
+.container-content_2 {
+    text-align: start;
+}
+
+@media (max-width:900px) {
+
+    /* for responsiveness use media instead of media screen */
+    .logo1 {
+        margin: 0px 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-content_1 {
+        margin-left: 10%;
+    }
+
+    .container-content_2 {
+        margin-left: 10%;
+    }
+
+    .card-content {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+i {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: white;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+    align-items: center;
+    border-radius: 1.2rem;
+}
+
+/* Found this while inspecting on chrome-Never underestimate the inspect part */
+.fa-solid:before {
+    content: "\f555";
+    font-size: 30px;
+    padding: 0;
+    right: 8px;
+    position: relative;
+    bottom: 7px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/* App apnne aap hi center me kar raha tha
+
+cards ke andar ke content ko so i manually
+putted it in the start
+*/
+
+
+/* I have made responsive for 900px but it should be for
+320px,780 and 1200px i'll do it afterwards
+*/
