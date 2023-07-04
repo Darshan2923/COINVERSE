@@ -1,3 +1,11 @@
+html {
+    /* Best addition up so far on the navbar
+    else navbar needs to get modified the whole
+    */
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
 .structure-header {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +39,7 @@ li a {
     font-weight: 1000;
     letter-spacing: 0.7px;
     margin-right: 20px;
+
 }
 
 
