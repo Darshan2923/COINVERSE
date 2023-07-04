@@ -1,0 +1,134 @@
+#join {
+    background-image: url("../styles/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    bottom: 0;
+}
+
+.join-title {
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.join-title h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: Oswald;
+    box-sizing: border-box;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    padding: 0px 50px;
+}
+
+.join-title span {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.join-subtitle {
+    margin-top: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.link-button {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    border-radius: 10rem;
+    color: #f3f2f4;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem 4rem;
+    transition: all .2s;
+    margin-bottom: 200px;
+}
+
+.link-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.eth-float2 {
+    -webkit-animation: move2 2s infinite;
+    animation: move2 2s infinite;
+    position: relative;
+    /* right: -277px; */
+    /* top: -190px; */
+    bottom: -190px;
+    right: 400px;
+    height: 110px;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.btc-float2 {
+    -webkit-animation: move2 2s infinite;
+    animation: move2 2s infinite;
+    position: relative;
+    top: -137px;
+    left: 390px;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes move2 {
+
+    0%,
+    100% {
+        transform: translateY(0px) scale(0.95);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+.footer-content__socials i {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    box-sizing: border-box;
+}
+
+.fa-brands {
+    font-size: 35px;
+    right: 8px;
+    position: relative;
+    bottom: 7px;
+}
+
+.fa-brands:hover {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.footer-content__text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+
+}
+
+.footer-content__text p:hover {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.privacy {
+    margin-right: 30px;
+}

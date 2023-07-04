@@ -2,11 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
     margin-left: 25%;
-    z-index: 200;
 }
+
+/* Will work on sticky nav later */
 
 .header {
     padding: 2rem 1rem;
@@ -29,6 +30,7 @@ li a {
     font-size: 1.5rem;
     font-weight: 1000;
     letter-spacing: 0.7px;
+    margin-right: 20px;
 }
 
 
@@ -77,5 +79,44 @@ a:hover {
 
     .structure-header {
         max-width: 100%;
+    }
+}
+
+@media (max-width:1400px) {
+    .logo-brand-link {
+        margin-right: 50px;
+    }
+
+    li a {
+        justify-content: space-between;
+    }
+}
+
+.fa-brands {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: text;
+    box-sizing: border-box;
+
+}
+
+.fa-brands:hover {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nav-socials {
+    right: -250px;
+    top: -20px;
+    display: inline;
+}
+
+
+@media(max-width:1100px) {
+    .nav-socials {
+        display: none;
     }
 }
