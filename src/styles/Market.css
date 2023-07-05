@@ -1,0 +1,28 @@
+.market-title {
+    color: white;
+    font-size: 50px;
+}
+
+.market-title h3 {
+    font-weight: 1000;
+    margin-bottom: 30px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.market-content__coin-list__top {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    border-radius: 8px 8px 0 0;
+    color: #f3f2f4;
+    display: grid;
+    font-size: 1.5rem;
+    font-weight: 500;
+    grid-template-columns: 16fr 25fr 25fr 25fr;
+    padding: 0.9rem;
+    text-align: center;
+    margin: 10px 100px;
+}
+
+.market-content__coin-list__top p {
+    color: white;
+}
