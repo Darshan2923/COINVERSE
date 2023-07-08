@@ -46,23 +46,11 @@
     width: 100%;
 }
 
-.market-content__coin-list__row {
-    grid-gap: 2rem;
-    align-items: center;
-    background-color: #0f051d;
-    border-bottom: 1px solid #f3f2f4;
-    color: #f3f2f4;
-    display: grid;
-    font-size: 2.2rem;
-    font-weight: 500;
-    gap: 2rem;
-    grid-template-columns: 16fr 25fr 25fr 25fr;
-    height: auto;
-    padding: 2.5rem 1.5rem;
-    text-align: right;
-    -webkit-user-select: none;
-    user-select: none;
-    width: 100%;
+.market-container__row-elements {
+    display: flex;
+
+
+
 }
 
 .market_coins_img img {
