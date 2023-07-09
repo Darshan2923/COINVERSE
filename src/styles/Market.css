@@ -28,28 +28,28 @@
 }
 
 .market-content__coin-list__row {
-    grid-gap: 2rem;
-    align-items: center;
+    margin: 10px 100px;
     background-color: #0f051d;
     border-bottom: 1px solid #f3f2f4;
     color: #f3f2f4;
     display: flex;
-    font-size: 2.2rem;
-    font-weight: 500;
-    gap: 2rem;
-    grid-template-columns: 16fr 25fr 25fr 25fr;
+    font-size: 1.8rem;
+    font-weight: 600;
     height: auto;
-    padding: 2.5rem 1.5rem;
-    text-align: right;
-    -webkit-user-select: none;
-    user-select: none;
     width: 100%;
 }
 
-
-.market-container__row-elements {
-    display: flex;
-
+.spam_row_elements_container {
+    background: black;
+    border-radius: 8px 8px 0 0;
+    color: #f3f2f4;
+    display: grid;
+    font-size: 1.5rem;
+    font-weight: 500;
+    grid-template-columns: 16fr 25fr 25fr 25fr;
+    padding: 0.9rem;
+    text-align: center;
+    margin: 10px 0px;
 
 }
 

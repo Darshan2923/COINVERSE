@@ -84,3 +84,10 @@ h1 {
     font-family: Oswald;
 
 }
+
+
+/* Top-4 elements */
+.top-4 {
+    top: 30vh;
+    position: relative;
+}

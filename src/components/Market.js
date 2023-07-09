@@ -6,7 +6,7 @@ function Market() {
     const [data, setData] = useState([]);
     // const [coinsLoad, setCoinsLoad] = useState(true);
 
-    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false`;
+    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false`;
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(url);
@@ -21,7 +21,7 @@ function Market() {
         // div ke andar hi changes karne se error aa rahe the 
         // That's why i made it a seperate 
         return (
-            <div className="market-container__row-elements">
+            <div className="spam_row_elements_container">
                 <span className='market_coins_img'>
                     <img src={item.image} alt="item.name" />{item.name}
                 </span>
