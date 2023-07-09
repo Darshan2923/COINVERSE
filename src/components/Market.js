@@ -17,6 +17,9 @@ function Market() {
     }, [url]);
 
     const apiElements = data.map(item => {
+        // Resolved a bug Yayyyy!!!!
+        // div ke andar hi changes karne se error aa rahe the 
+        // That's why i made it a seperate 
         return (
             <div className="market-container__row-elements">
                 <span className='market_coins_img'>
@@ -53,7 +56,13 @@ function Market() {
                         <p>Market Change</p>
                     </div>
                     <div className="market-content__coin-list__row">
-                        {apiElements}
+                        <div className="market-content_coin-list_row-elements">
+                            {/* Resolved a bug **Congrats to me!!!** */}
+                            {/* Made a seperate div kyuki same div me chaar elements render ho rahe the
+                        hence grid saathme action le raha tha
+                        */}
+                            {apiElements}
+                        </div>
                         {console.log(data)}
                     </div>
                 </div>
