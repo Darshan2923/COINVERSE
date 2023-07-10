@@ -6,6 +6,10 @@ import logo2 from '../styles/ethereum-floating.png'
 function Theme() {
     const [data, setData] = React.useState([])
     const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false`;
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     React.useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(url);
@@ -18,7 +22,30 @@ function Theme() {
     const top4Elements = data.map(item => {
         return (
             <div className="top-4-spam-elements">
-                <span className='market_coins_img'>
+                <div className="top-4_image_element_image">
+                    <img src={item?.image} alt={item?.name} />
+                </div>
+                <div className="top-4-written-content">
+                    <p className="slider-coin__name">
+                        {item?.name}{" "}
+                        <span
+                            className={
+                                "slider-coin__price " +
+                                (item.price_change_percentage_24h <= 0
+                                    ? "red-text"
+                                    : "green-text")
+                            }
+                        >
+                            {item?.price_change_percentage_24h?.toFixed(2) + "%"}
+                        </span>
+                    </p>
+                    <p className="slider-coin__price">
+                        {"$ " + numberWithCommas(item.current_price?.toFixed(2))}
+                    </p>
+                </div>
+
+
+                {/* <span className='market_coins_img'>
                     <img src={item.image} alt="item.name" />{item.name}
                 </span>
                 <p>{"$ " + item.current_price.toFixed(2)}</p>
@@ -32,7 +59,7 @@ function Theme() {
                 >
                     {item.price_change_percentage_24h.toFixed(2) + " %"}
                 </p>
-                <p>{"$ " + (item.market_cap)}</p>
+                <p>{"$ " + (item.market_cap)}</p> */}
 
             </div>
         )
@@ -55,7 +82,7 @@ function Theme() {
                         </div>
                     </div>
                 </div>
-                <div className='top-4'>
+                <div className='coin-slider'>
                     {top4Elements}
                 </div>
             </section>
