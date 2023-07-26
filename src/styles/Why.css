@@ -31,12 +31,12 @@
     padding: 20px 40px;
     margin: 20px;
     margin-bottom: 40px;
-    max-width: 500px;
-    background-color: rgb(36, 28, 36);
-    /* border-box matlab width air height ko count kar lena */
+    max-width: 450px;
+    background-color: hsla(0, 0%, 100%, .05);
+    border: 1px solid hsla(0, 0%, 51%, .25);
+    /* border-box matlab width aur height ko count kar lena */
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid gray;
 }
 
 .text-content {
@@ -67,8 +67,8 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    max-width: 400px;
-    max-height: 500px;
+    max-width: 350px;
+    max-height: 470px;
     box-sizing: border-box;
     display: inline;
 }
