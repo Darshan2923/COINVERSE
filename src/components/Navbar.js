@@ -1,27 +1,38 @@
 import React from 'react'
 import '../styles/Navbar.css'
 
-
 function Navbar() {
+    // //Javascript for responsiveness
+    // const menuBtn = document.querySelector(".menu-btn");
+    // menuBtn.addEventListener("click", () => {
+    //     menuBtn.classList.toggle("active");
+    // });
 
+    //In React
+    const handleClick = () => {
+        const menuBtn = document.querySelector('.menu-btn');
+        const navigation = document.querySelector('.navigation');
+        menuBtn.classList.toggle('active');
+        navigation.classList.toggle('active');
+    };
     return (
-        <div>
-            <div className="header">
-                <div className='logo-brand'>
-                    <a className='logo-brand-link' href="#home" >COINVERSE</a>
-                </div>
-                <ul className='structure-header'>
-                    <li><a href="#home"  >Home</a></li>
-                    <li><a href="#market"  >Market</a></li>
-                    <li><a href="#choose"  >Choose Us</a></li>
-                    <li><a href="#join"  >Join Us</a></li>
-                    <div className="nav-socials">
-                        <a rel="noreferrer" href="https://twitter.com/axion_network" target='_blank'><i className="nav-socials fa-brands fa-twitter"></i></a>
-                        <a rel="noreferrer" href="https://discord.com/invite/money" target='_blank'><i className="nav-socials fa-brands fa-discord"></i></a>
+        <section id="nav">
+            <div className='navbar-container'>
+                <header>
+                    <a href="/" className='brand'>Travelophile</a>
+                    <div className="menu-btn" onClick={handleClick}></div>
+                    <div className="navigation" onClick={handleClick}>
+                        <div className="navigation-items">
+                            <a href="#nav" className='home'>Home</a>
+                            <a href="#section__title" className="popular">Popular</a>
+                            <a href="#explore" className='explore'>Explore</a>
+                            <a href="/" className="contact">Book</a>
+                        </div>
                     </div>
-                </ul>
+                </header>
             </div>
-        </div>
+        </section>
+
     )
 }
 
