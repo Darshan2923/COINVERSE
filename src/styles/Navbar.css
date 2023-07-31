@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-    background-color: linear-gradient(0deg, #0f051d 30%, #130749 70%);
 }
 
 html {
     scroll-behavior: smooth;
     scroll-padding: 10rem;
+    background: linear-gradient(0deg, #0f051d 30%, #130749 70%);
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 200px;
+    padding: 35px 200px;
     transition: 0.5s ease;
 }
 
@@ -49,7 +49,16 @@ header .navigation .navigation-items a {
     background-color: transparent;
 }
 
-header .navigation .navigation-items a::before {
+/* header .navigation .navigation-items a:hover, */
+header a:hover {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    /* colorful look dene ke liye of the text in span */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* header .navigation .navigation-items a::before {
     content: '';
     position: absolute;
     background: transparent;
@@ -59,7 +68,7 @@ header .navigation .navigation-items a::before {
     left: 0;
     transition: 0.3s ease;
 
-}
+} */
 
 header .navigation .navigation-items a:hover::before {
     width: 100%;
@@ -107,7 +116,7 @@ header .navigation .navigation-items a:hover::before {
         margin: 20px;
         padding: 40px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         border-radius: 5px;
         box-shadow: 0.5px 25px rgb(1, 1, 1/20%);

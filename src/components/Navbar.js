@@ -19,14 +19,14 @@ function Navbar() {
         <section id="nav">
             <div className='navbar-container'>
                 <header>
-                    <a href="/" className='brand'>Travelophile</a>
+                    <a href="#home" className='brand'>COINVERSE</a>
                     <div className="menu-btn" onClick={handleClick}></div>
                     <div className="navigation" onClick={handleClick}>
                         <div className="navigation-items">
-                            <a href="#nav" className='home'>Home</a>
-                            <a href="#section__title" className="popular">Popular</a>
-                            <a href="#explore" className='explore'>Explore</a>
-                            <a href="/" className="contact">Book</a>
+                            <a href="#home" className='home'>Home</a>
+                            <a href="#market" className="market">Market</a>
+                            <a href="#choose" className='choose'>Choose Us</a>
+                            <a href="#join" className="join">Join Us</a>
                         </div>
                     </div>
                 </header>
