@@ -4,7 +4,7 @@
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
     /* colorful look dene ke liye of the text in span */
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
     /* webkit is how the code will look in your browser
     text-fill-color-text ka color
     background-clip:text (if you want to color the text, isko aisa likho and make fill-color:transparent
@@ -16,7 +16,7 @@
     color: white;
     text-transform: uppercase;
     font-size: 70px;
-    font-family: Oswald;
+    font-family: Space Grotesk;
 }
 
 /* Why us ke niche margin diya hai */
@@ -149,3 +149,21 @@ putted it in the start
 /* I have made responsive for 900px but it should be for
 320px,780 and 1200px i'll do it afterwards
 */
+
+@media(max-width:700px) {
+    .choose_container h2 {
+        font-size: 60px;
+    }
+
+    .container-content_1 {
+        margin-left: 0px;
+    }
+
+    .container-content_2 {
+        margin-left: 0px;
+    }
+
+    .logo1 {
+        margin-left: 80px;
+    }
+}
