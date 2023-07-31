@@ -16,7 +16,7 @@
     color: white;
     font-size: 100px;
     font-weight: 900;
-    font-family: Oswald;
+    font-family: Space Grotesk;
     box-sizing: border-box;
     line-height: 1.1em;
     text-transform: uppercase;
@@ -42,7 +42,6 @@
 .link-button {
     background: linear-gradient(25deg, #2600fc, #ff00ea);
     border-radius: 10rem;
-    color: #f3f2f4;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 2rem 4rem;
@@ -132,4 +131,33 @@
 
 .privacy {
     margin-right: 30px;
+}
+
+@media(max-width:950px) {
+    .join-title h1 {
+        font-size: 60px;
+    }
+
+    .join-subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        background-image: none;
+    }
+
+    .link-button {
+        font-size: 1rem;
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .eth-float {
+        display: none;
+    }
+
+    .btc-float {
+        display: none;
+    }
 }
