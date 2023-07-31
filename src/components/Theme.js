@@ -82,6 +82,10 @@ function Theme() {
                         </div>
                     </div>
                 </div>
+                <a href="#market" className="mobile-btn-hero">
+                    See Prices
+                    <i className='fa-solid fa-angle-down arrow' ></i>
+                </a>
                 <div className='coin-slider'>
                     {top4Elements}
                 </div>

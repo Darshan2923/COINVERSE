@@ -27,7 +27,7 @@
     background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 
 }
 
@@ -95,7 +95,7 @@
     background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
     -webkit-text-fill-color: white;
-    -webkit-background-clip: text;
+    background-clip: text;
     box-sizing: border-box;
 }
 
@@ -110,7 +110,7 @@
     background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .footer-content__text {
@@ -126,7 +126,7 @@
     background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
             rgb(128, 0, 111), rgb(197, 33, 134) 100%);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
     cursor: pointer;
 }
 
