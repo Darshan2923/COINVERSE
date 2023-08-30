@@ -9,7 +9,7 @@
 
 .market-content h2 {
     color: white;
-    font-size: 4.5rem;
+    font-size: 70px;
     margin-bottom: 3rem;
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .market-content__coin-list__top {
@@ -60,6 +60,11 @@
 
 
 @media (max-width: 700px) {
+    .market-content h2 {
+        font-size: 60px;
+        text-align: left;
+    }
+
     .market-content__coin-list__top p {
         width: fit-content;
     }
@@ -123,22 +128,33 @@
 }
 
 @media (max-width: 700px) {
-    .coin-row {
+
+    .coin-row,
+    .market-content__coin-list__top {
         width: fit-content;
     }
 }
 
 
 @media (max-width: 800px) {
+    .market-content__coin-list__top p:first-child {
+        padding-right: 8rem;
+    }
+
+    .price-top {
+        padding-right: 3rem;
+    }
+
     .coin-row p:last-child {
-        width: 23rem;
+        width: 10rem;
     }
 }
 
 
 @media (max-width: 800px) {
+
     .coin-row p {
-        width: 15rem;
+        width: 7rem;
     }
 }
 
@@ -146,12 +162,13 @@
     text-align: left;
     align-items: center;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 @media (max-width: 800px) {
+
     .coin-row span {
-        width: 19rem;
+        width: 10rem;
     }
 }
 
@@ -163,7 +180,6 @@
 @media(max-width:950px) {
     .coin-row {
         padding: 1.5rem 1rem;
-        overflow: hidden;
     }
 
     .coin-row span img {
