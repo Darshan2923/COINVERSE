@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+      rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+  border-radius: 5px;
+}

@@ -92,18 +92,18 @@
 
     /* for responsiveness use media instead of media screen */
     .logo1 {
-        margin: 0px 200px;
+        margin: 0px auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .container-content_1 {
-        margin-left: 10%;
+        margin: 0 auto;
     }
 
     .container-content_2 {
-        margin-left: 10%;
+        margin: 0 auto;
     }
 
     .card-content {

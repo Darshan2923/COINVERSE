@@ -1,68 +1,173 @@
-.market-title {
-    color: white;
-    font-size: 50px;
+.market-section {
+    padding: 5rem 0;
 }
 
-.market-title h3 {
-    font-weight: 1000;
-    margin-bottom: 30px;
+.market-content {
     display: flex;
-    margin-left: 100px;
+    flex-direction: column;
+}
+
+.market-content h2 {
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 430px) {
+    .market-content {
+        font-size: 4rem;
+    }
+}
+
+.market-content__coin-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .market-content__coin-list__top {
-    background: linear-gradient(25deg, #2600fc, #ff00ea);
-    border-radius: 8px 8px 0 0;
-    color: #f3f2f4;
     display: grid;
-    font-size: 1.5rem;
-    font-weight: 500;
     grid-template-columns: 16fr 25fr 25fr 25fr;
-    padding: 0.9rem;
-    text-align: center;
-    margin: 10px 100px;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-align: right;
+    font-weight: 500;
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: white;
+    border-radius: 8px 8px 0 0;
+    gap: 2rem;
 }
 
-.market-content__coin-list__top p {
-    color: white;
+@media (max-width: 800px) {
+    .market-content__coin-list__top {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .market-content__coin-list__top p {
+        width: 18rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .market-content__coin-list__top p {
+        width: fit-content;
+    }
+}
+
+.market-content__coin-list__top p:first-child {
+    text-align: left;
 }
 
 .market-content__coin-list__row {
-    margin: 10px 100px;
-    background-color: #0f051d;
-    border-bottom: 1px solid #f3f2f4;
-    color: #f3f2f4;
     display: flex;
-    font-size: 1.8rem;
-    font-weight: 800;
-    height: auto;
-    width: 88%;
+    flex-direction: column;
 }
 
-.spam_row_elements_container {
-    background: black;
-    border-radius: 8px 8px 0 0;
-    color: #f3f2f4;
+.market-content__coin-list__pagination {
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.market-content__coin-list__pagination button {
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.activePagi {
+    background: linear-gradient(25deg, rgb(54, 10, 188) 0.5%,
+            rgb(128, 0, 111), rgb(197, 33, 134) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: white;
+}
+
+
+.coin-row {
     display: grid;
-    font-size: 1.5rem;
-    font-weight: 800;
-    width: 100%;
     grid-template-columns: 16fr 25fr 25fr 25fr;
-    padding: 0.9rem;
-    text-align: center;
-    margin: 10px 0px;
-
+    color: white;
+    font-size: 1.2rem;
+    padding: 2.5rem 1.5rem;
+    text-align: right;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid white;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    user-select: none;
 }
 
-.market_coins_img img {
-    width: 50px;
-    height: 50px;
+.coin-row:hover {
+    background-color: #200840;
+    cursor: pointer;
 }
 
-.red-text {
-    color: #ee2400;
+@media (max-width: 700px) {
+    .coin-row {
+        width: fit-content;
+    }
 }
 
-.green-text {
-    color: #66FF99;
+
+@media (max-width: 800px) {
+    .coin-row p:last-child {
+        width: 23rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .coin-row p {
+        width: 15rem;
+    }
+}
+
+.coin-row span {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 800px) {
+    .coin-row span {
+        width: 19rem;
+    }
+}
+
+.coin-row span img {
+    width: 5rem;
+    height: 5rem;
+}
+
+@media(max-width:950px) {
+    .coin-row {
+        padding: 1.5rem 1rem;
+        overflow: hidden;
+    }
+
+    .coin-row span img {
+        width: 3rem;
+        height: 3rem;
+    }
 }
