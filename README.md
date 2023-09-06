@@ -3,7 +3,7 @@
 
 Welcome to **CryptoTrack**, a powerful React-based application designed to provide real-time information and analysis for various cryptocurrencies. With this user-friendly application, you can stay up-to-date with the latest market trends, efficiently track your cryptocurrency portfolios, and make well-informed investment decisions.
 
-👉 Live Demo: <a href='https://coinverse-green.vercel.app/'>Coinverse Demo</a>
+👉 Live Demo: <a href='https://coinverse-green.vercel.app/'>Coinverse Website</a>
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
